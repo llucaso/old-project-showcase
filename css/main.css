@@ -420,19 +420,19 @@ footer {
       cursor: pointer; }
 
 .work1 {
-  background-image: url(../new-images/Proj/bootstrap.png); }
+  background-image: url(../../Proj/bootstrap.png); }
 
 .work2 {
-  background-image: url(../new-images/company.png); }
+  background-image: url(../../Proj/company.png); }
 
 .work3 {
-  background-image: url(../new-images/designlab.png); }
+  background-image: url(../../Proj/designlab.png); }
 
 .work4 {
-  background-image: url(../new-images/randomQuoteMachine.png); }
+  background-image: url(../../Proj/randomQuoteMachine.png); }
 
 .work5 {
-  background-image: url(../new-images/RockPaperScr.png); }
+  background-image: url(../../Proj/RockPaperScr.png); }
 
 .proj {
   font-size: 24px;
