@@ -66,13 +66,28 @@ h1 {
     display: flex;
     justify-content: center; }
     header .logo img {
-      margin: 50px 0px; }
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 0; }
   header nav {
-    float: none;
-    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 20px; }
+    header nav a {
+      margin: 0;
+      font-size: 20px;
+      padding: 5px; }
   header h1 {
     padding-top: 0px; } }
 
@@ -112,29 +127,32 @@ footer {
           color: rgba(0, 0, 0, 0.7); }
 
 @media (max-width: 640px) {
-  footer .lockup .logoFooter {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
+  footer .lockup {
     justify-content: center; }
-  .content-wrap nav {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-flow: wrap; }
-    .content-wrap nav a {
-      padding: 10px; } }
+    footer .lockup .logoFooter {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    footer .lockup .content-wrap nav {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    footer .lockup .content-wrap a {
+      padding: 20px;
+      font-size: 20px; } }
 
 .aboutMe {
   font-size: 24px;
@@ -205,7 +223,7 @@ footer {
     height: 100px;
     width: 100px; }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
   .face-lockup {
     display: block;
     text-align: center; }
@@ -288,9 +306,10 @@ footer {
     .skill-lockup .skill-icons.skill-10 span:nth-child(n+10) {
       background-color: #999999; }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 640px) {
   .skill-lockup {
-    width: 220px; }
+    width: 220px;
+    justify-content: center; }
     .skill-lockup .skill-unit {
       width: 220px; } }
 
