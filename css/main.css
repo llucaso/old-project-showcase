@@ -349,7 +349,15 @@ footer {
     transform: translate3d(-50%, 0, 0); }
 
 .thumb-container {
-  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 960px;
   margin: 0 auto; }
   .thumb-container::after {
