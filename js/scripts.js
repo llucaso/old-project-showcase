@@ -3,7 +3,12 @@ $(function() {
   workBelt();
   workLoad();
   $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
-  $("#biglink").fitText(1, { minFontSize: '30px', maxFontSize: '72px' });
+  //$("#biglink").fitText(1.2, { minFontSize: '30px', maxFontSize: '72px' });
+});
+
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
 });
 
 function smoothScrool (duration) {
