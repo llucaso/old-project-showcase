@@ -6,6 +6,12 @@ $(function() {
   $("#biglink").fitText(1, { minFontSize: '30px', maxFontSize: '72px' });
 });
 
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+
+
 function smoothScrool (duration) {
   $('a[href^="#"]').on('click', function(event) {
     console.log("działa")
