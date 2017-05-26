@@ -6,12 +6,6 @@ $(function() {
   $("#biglink").fitText(1, { minFontSize: '30px', maxFontSize: '72px' });
 });
 
-$(window).load(function() {
-    // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
-  });
-
-
 function smoothScrool (duration) {
   $('a[href^="#"]').on('click', function(event) {
     console.log("działa")
@@ -52,7 +46,7 @@ function workLoad() {
     var newTitle = $this.find('strong').text();
     var newFolder = $this.data('folder');
     var spinner = '<div class="loader">Loading...</div>';
-    var newHTML = '/work/'+ newFolder + '.html';
+    var newHTML = newFolder;
     $('.project-load').html(spinner).load(newHTML);
     $('.project-title').text(newTitle);
   });
