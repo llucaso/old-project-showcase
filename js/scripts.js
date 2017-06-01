@@ -30,7 +30,7 @@ function workBelt () {
     
     //$('.work-belt').css('left', '-100%');
     $('.work-belt').addClass("slided"); //hardware improvement
-      console.log('dziala 1');
+      //console.log('dziala 1');
       $('.work-container').show();
     });
 
@@ -38,7 +38,7 @@ function workBelt () {
     
       //$('.work-belt').css('left', '0%');
       $('.work-belt').removeClass("slided"); //hardware improvement
-      console.log('dziala 2');
+      //console.log('dziala 2');
       $('.work-container').hide(800);
   });
 }
