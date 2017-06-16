@@ -6,7 +6,7 @@ html, body {
   overflow-x: hidden; }
 
 header {
-  height: 450px;
+  height: 100%;
   background-image: url(../new-images/gdyniaprisma.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -682,5 +682,126 @@ footer {
   height: 100%;
   z-index: 9999;
   background: url(../new-images/Preloader_5.gif) center no-repeat #fff; }
+
+.glitch {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  margin: 0 auto;
+  display: inline; }
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(36px, 9999px, 46px, 0); }
+  5% {
+    clip: rect(69px, 9999px, 72px, 0); }
+  10% {
+    clip: rect(37px, 9999px, 48px, 0); }
+  15% {
+    clip: rect(24px, 9999px, 73px, 0); }
+  20% {
+    clip: rect(22px, 9999px, 60px, 0); }
+  25% {
+    clip: rect(32px, 9999px, 37px, 0); }
+  30% {
+    clip: rect(47px, 9999px, 6px, 0); }
+  35% {
+    clip: rect(86px, 9999px, 86px, 0); }
+  40% {
+    clip: rect(90px, 9999px, 15px, 0); }
+  45% {
+    clip: rect(90px, 9999px, 99px, 0); }
+  50% {
+    clip: rect(75px, 9999px, 94px, 0); }
+  55% {
+    clip: rect(52px, 9999px, 26px, 0); }
+  60% {
+    clip: rect(9px, 9999px, 15px, 0); }
+  65% {
+    clip: rect(73px, 9999px, 54px, 0); }
+  70% {
+    clip: rect(62px, 9999px, 47px, 0); }
+  75% {
+    clip: rect(100px, 9999px, 29px, 0); }
+  80% {
+    clip: rect(58px, 9999px, 27px, 0); }
+  85% {
+    clip: rect(8px, 9999px, 69px, 0); }
+  90% {
+    clip: rect(2px, 9999px, 74px, 0); }
+  95% {
+    clip: rect(77px, 9999px, 87px, 0); }
+  100% {
+    clip: rect(32px, 9999px, 19px, 0); } }
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse; }
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(85px, 9999px, 42px, 0); }
+  5% {
+    clip: rect(81px, 9999px, 86px, 0); }
+  10% {
+    clip: rect(94px, 9999px, 22px, 0); }
+  15% {
+    clip: rect(80px, 9999px, 97px, 0); }
+  20% {
+    clip: rect(71px, 9999px, 37px, 0); }
+  25% {
+    clip: rect(16px, 9999px, 32px, 0); }
+  30% {
+    clip: rect(25px, 9999px, 82px, 0); }
+  35% {
+    clip: rect(75px, 9999px, 32px, 0); }
+  40% {
+    clip: rect(32px, 9999px, 69px, 0); }
+  45% {
+    clip: rect(40px, 9999px, 38px, 0); }
+  50% {
+    clip: rect(73px, 9999px, 58px, 0); }
+  55% {
+    clip: rect(98px, 9999px, 49px, 0); }
+  60% {
+    clip: rect(95px, 9999px, 85px, 0); }
+  65% {
+    clip: rect(57px, 9999px, 39px, 0); }
+  70% {
+    clip: rect(73px, 9999px, 86px, 0); }
+  75% {
+    clip: rect(77px, 9999px, 89px, 0); }
+  80% {
+    clip: rect(94px, 9999px, 44px, 0); }
+  85% {
+    clip: rect(62px, 9999px, 95px, 0); }
+  90% {
+    clip: rect(14px, 9999px, 89px, 0); }
+  95% {
+    clip: rect(52px, 9999px, 35px, 0); }
+  100% {
+    clip: rect(5px, 9999px, 81px, 0); } }
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
 
 /*# sourceMappingURL=main.css.map */

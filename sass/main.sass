@@ -19,7 +19,8 @@ html, body
 
 //header
 header
-	height: 450px
+	height: 100%
+	//background-color: black
 	background-image: url(../new-images/gdyniaprisma.jpg)
 	background-repeat: no-repeat
 	background-size: cover
@@ -617,3 +618,61 @@ footer
 	height: 100%
 	z-index: 9999
 	background: url(../new-images/Preloader_5.gif) center no-repeat #fff
+
+
+//GLITCH
+
+.glitch
+  color: white
+  font-size: 100px
+  position: relative
+  //width: 100%
+  margin: 0 auto
+  display: inline
+
+@keyframes noise-anim
+  $steps: 20
+  @for $i from 0 through $steps
+    #{percentage($i*(1/$steps))}
+      clip: rect(random(100)+px,9999px,random(100)+px,0)
+    
+  
+
+.glitch:after
+  content: attr(data-text)
+  position: absolute
+  left: 2px
+  text-shadow: -1px 0 red
+  top: 0
+  color: white
+  //background: black
+  overflow: hidden
+  clip: rect(0,900px,0,0)
+  animation: noise-anim 2s infinite linear alternate-reverse
+
+
+@keyframes noise-anim-2
+  $steps: 20;
+  @for $i from 0 through $steps
+    #{percentage($i*(1/$steps))}
+      clip: rect(random(100)+px,9999px,random(100)+px,0)
+
+ 
+
+.glitch:before
+  content: attr(data-text)
+  position: absolute
+  left: -2px
+  text-shadow: 1px 0 blue
+  top: 0
+  color: white
+  //background: black
+  overflow: hidden
+  clip: rect(0,900px,0,0)
+  animation: noise-anim-2 3s infinite linear alternate-reverse
+
+
+@keyframes caret
+  50%
+    border-color: transparent
+
