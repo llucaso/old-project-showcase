@@ -134,3 +134,11 @@ document.addEventListener('DOMContentLoaded',function(event){
   StartTextAnimation(0);
 });
 
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}

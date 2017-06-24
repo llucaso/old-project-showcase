@@ -48,10 +48,11 @@ header
 			position: absolute
 			top: 0
 			left: 0
-			height: auto
-			width: 100%
+			//height: auto
+			//width: 100%
 			z-index: -1000
-		
+			object-fit: cover
+
 
 	.logo
 		img
@@ -76,6 +77,24 @@ header
 
 			&:hover
 				color: rgba(0,0,0,1)
+
+@media (max-width: 1500px)
+	video
+		display: none
+	.overlay
+		background: url(../new-images/headerBg.png) center center
+
+		header
+			background-color: rgba(173, 101, 25, 0.7)
+
+@media (max-width: 640px)
+	.overlay
+		background: url(../new-images/headerBg.png) 75% 30%
+
+
+
+		
+
 
 h1
 	text-align: center
@@ -204,7 +223,7 @@ footer
 
 //o mnie
 .aboutMe
-	font-size: 24px
+	font-size: 43px
 	font-weight: 700
 	text-transform: uppercase
 	font-family: 'lato'
@@ -456,7 +475,7 @@ p
 	
 
 	h4
-		color: #e1c184
+		color: #ffffff
 		font-weight: 300
 		text-transform: uppercase
 		font-size: 24px
@@ -482,6 +501,11 @@ p
 
 			&:hover
 				opacity: 1
+
+.project-load
+	p
+		color: #ffffff
+
 
 
 
@@ -590,7 +614,7 @@ p
 			opacity: 0.5
 
 			path
-				fill: rgba(0,0,0,0.4)
+				fill: rgba(255,255,255,0.4)
 
 			&:hover
 				opacity: 1
@@ -678,12 +702,13 @@ p
 			font-size: 20px
 
 .glitch
-  color: white
-  font-size: 100px
-  position: relative
-  //width: 100%
-  margin: 0 auto
-  display: inline
+	color: white
+	font-size: 100px
+	position: relative
+	//width: 100%
+	margin: 0 auto
+	display: inline
+	align-self: flex-end
 
 @keyframes noise-anim
   $steps: 20
