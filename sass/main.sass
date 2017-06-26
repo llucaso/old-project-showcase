@@ -27,6 +27,7 @@ body
 
 //header
 header
+	position: relative
 	height: 100%
 	width: 100%
 	background-color: black
@@ -52,13 +53,9 @@ header
 			//width: 100%
 			z-index: -1000
 			object-fit: cover
+ 
 
 
-	.logo
-		img
-			+size(50px)
-			float: left
-			margin: 10px 0 0 30px
 
 	nav
 		float: right
@@ -86,17 +83,13 @@ header
     text-transform: uppercase
     color: #fff
     cursor: pointer
-
 .label
       padding: 10px
       display: inline-block
-
 .button
 	left: 43%
 	top: 50%
 .v10
-
-
       &:hover
         .icon
           transform: scale(0.9) skew(0deg, 0deg)
@@ -162,7 +155,7 @@ header
             bottom: 0
 
 
-@media (max-width: 1500px)
+@media (max-width: 1270px)
 	video
 		display: none
 	.overlay
@@ -190,7 +183,8 @@ h1
 	letter-spacing: 0.05em
 	margin-bottom: 20px
 	clear: both
-	padding-top: 600px
+	position: absolute
+
 
 	span
 		display: inline-block
@@ -216,6 +210,9 @@ h4
 	color: white
 	line-height: 1
 	font-size: 25px
+	position: absolute
+	bottom: 0
+	display: inline
 
 @media (max-width: 640px)
 	header
@@ -772,7 +769,7 @@ p
 @media (max-width: 1270px)
 	header
 		h1
-			padding-top: 600px
+
 			.glitch
 				font-size: 40px
 
