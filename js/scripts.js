@@ -5,16 +5,25 @@ $(function() {
   $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
   //$("#biglink").fitText(1.2, { minFontSize: '30px', maxFontSize: '72px' });
 
-  $('#btn-1').mouseover(function() {
+  $('#btn-1').mouseenter(function() {
+  createElement();
   showVideo('1');
 });
 
+$('#btn-1').mouseleave(function() {
+  deleteElement();
+  showVideo('2');
+});
 
 function showVideo(videoId){
   $('.Video').css('display', 'none');
   $('#video-'+videoId).css('display', 'block');  
 }
 
+function deleteElement() {
+  var src = document.querySelector('#src-glitch');
+  src.remove();
+}
   
 });
 
@@ -146,29 +155,27 @@ document.addEventListener('DOMContentLoaded',function(event){
   StartTextAnimation(0);
 });
 
-var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#polina button");
 
-if (window.matchMedia('(prefers-reduced-motion)').matches) {
-    vid.removeAttribute("autoplay");
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
+var element = document.createElement('source');
+element.src = 'header_1.mp4';
+element.type = 'video/mp4';
+element.id = "src-glitch";
+
+
+function createElement() {
+  var video = document.getElementById('video-1');
+  video.appendChild(element);
 }
 
-$('#btn-1').mouseover(function() {
-  showVideo('1');
-});
-$('#btn-2').mouseover(function() {
-  showVideo('2');
-});
-$('#btn-3').mouseover(function() {
-  showVideo('3');
-});
-$('#btn-4').mouseover(function() {
-  showVideo('4');
-});
-
-function showVideo(videoId){
-  $('.Video').css('display', 'none');
-  $('#video-'+videoId).css('display', 'block');  
+function deleteElement() {
+  var src = document.querySelector('#src-glitch');
+  src.remove();
 }
+
+
+
+
+
+
+
+
