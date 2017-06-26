@@ -42,11 +42,22 @@ header {
       header nav a:hover {
         color: black; }
 
+.button-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px; }
+
 .button {
-  margin: 20px;
   float: left;
   position: relative;
-  font-family: arial;
+  font-family: 'lato';
+  font-size: 27px;
   text-transform: uppercase;
   color: #fff;
   cursor: pointer; }
@@ -54,10 +65,6 @@ header {
 .label {
   padding: 10px;
   display: inline-block; }
-
-.button {
-  left: 43%;
-  top: 50%; }
 
 .v10:hover .icon {
   transform: scale(0.9) skew(0deg, 0deg); }
@@ -108,7 +115,7 @@ header {
     right: 0;
     bottom: 0; }
 
-@media (max-width: 1270px) {
+@media (max-width: 1000px) {
   video {
     display: none; }
   .overlay {
@@ -121,15 +128,16 @@ header {
     background: url(../new-images/headerBg.png) 75% 30%; } }
 
 h1 {
+  padding-top: 100px;
+  margin: auto;
+  margin-bottom: 25px;
   text-align: center;
   font-size: 72px;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 20px;
-  clear: both;
-  position: absolute; }
+  clear: both; }
   h1 span {
     display: inline-block;
     padding: 0.2em 0.5em;
@@ -145,6 +153,8 @@ h1 {
       font-size: 15px; }
 
 h4 {
+  margin: auto;
+  width: 100%;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -152,9 +162,7 @@ h4 {
   color: white;
   line-height: 1;
   font-size: 25px;
-  position: absolute;
-  bottom: 0;
-  display: inline; }
+  position: absolute; }
 
 @media (max-width: 640px) {
   header .logo {
@@ -188,9 +196,7 @@ h4 {
     header nav a {
       margin: 0;
       font-size: 20px;
-      padding: 5px; }
-  header h1 {
-    padding-top: 0px; } }
+      padding: 5px; } }
 
 section {
   background-color: #FF9700; }
@@ -795,18 +801,16 @@ p {
   background: url(../new-images/Preloader_5.gif) center no-repeat #fff; }
 
 @media (max-width: 1270px) {
-  header h1 .glitch {
-    font-size: 40px; } }
+  header h1 {
+    font-size: 40px;
+    padding-top: 100px; } }
 
 @media (max-width: 640px) {
-  header h1 {
-    padding-top: 50%; }
-    header h1 .glitch {
-      font-size: 25px; }
   header h4 {
     font-size: 20px; } }
 
 .glitch {
+  margin: 0;
   color: white;
   font-size: 100px;
   position: relative;
@@ -816,47 +820,47 @@ p {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(85px, 9999px, 86px, 0); }
+    clip: rect(4px, 9999px, 71px, 0); }
   5% {
-    clip: rect(22px, 9999px, 99px, 0); }
+    clip: rect(22px, 9999px, 76px, 0); }
   10% {
-    clip: rect(19px, 9999px, 26px, 0); }
+    clip: rect(9px, 9999px, 60px, 0); }
   15% {
-    clip: rect(75px, 9999px, 42px, 0); }
+    clip: rect(25px, 9999px, 58px, 0); }
   20% {
-    clip: rect(66px, 9999px, 73px, 0); }
+    clip: rect(69px, 9999px, 80px, 0); }
   25% {
-    clip: rect(91px, 9999px, 17px, 0); }
+    clip: rect(77px, 9999px, 71px, 0); }
   30% {
-    clip: rect(60px, 9999px, 97px, 0); }
+    clip: rect(74px, 9999px, 1px, 0); }
   35% {
-    clip: rect(76px, 9999px, 35px, 0); }
+    clip: rect(39px, 9999px, 13px, 0); }
   40% {
-    clip: rect(90px, 9999px, 34px, 0); }
+    clip: rect(51px, 9999px, 22px, 0); }
   45% {
-    clip: rect(42px, 9999px, 11px, 0); }
+    clip: rect(100px, 9999px, 39px, 0); }
   50% {
-    clip: rect(52px, 9999px, 27px, 0); }
+    clip: rect(27px, 9999px, 47px, 0); }
   55% {
-    clip: rect(78px, 9999px, 52px, 0); }
+    clip: rect(37px, 9999px, 88px, 0); }
   60% {
-    clip: rect(93px, 9999px, 43px, 0); }
+    clip: rect(100px, 9999px, 3px, 0); }
   65% {
-    clip: rect(37px, 9999px, 19px, 0); }
+    clip: rect(1px, 9999px, 100px, 0); }
   70% {
-    clip: rect(68px, 9999px, 37px, 0); }
+    clip: rect(46px, 9999px, 58px, 0); }
   75% {
-    clip: rect(46px, 9999px, 51px, 0); }
+    clip: rect(89px, 9999px, 38px, 0); }
   80% {
-    clip: rect(14px, 9999px, 19px, 0); }
+    clip: rect(34px, 9999px, 38px, 0); }
   85% {
-    clip: rect(45px, 9999px, 48px, 0); }
+    clip: rect(21px, 9999px, 97px, 0); }
   90% {
-    clip: rect(19px, 9999px, 99px, 0); }
+    clip: rect(21px, 9999px, 57px, 0); }
   95% {
-    clip: rect(13px, 9999px, 75px, 0); }
+    clip: rect(76px, 9999px, 21px, 0); }
   100% {
-    clip: rect(45px, 9999px, 80px, 0); } }
+    clip: rect(17px, 9999px, 40px, 0); } }
 
 .glitch:after {
   content: attr(data-text);
@@ -871,47 +875,47 @@ p {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(55px, 9999px, 59px, 0); }
+    clip: rect(19px, 9999px, 25px, 0); }
   5% {
-    clip: rect(38px, 9999px, 62px, 0); }
+    clip: rect(53px, 9999px, 58px, 0); }
   10% {
-    clip: rect(64px, 9999px, 63px, 0); }
+    clip: rect(62px, 9999px, 40px, 0); }
   15% {
-    clip: rect(44px, 9999px, 99px, 0); }
+    clip: rect(64px, 9999px, 42px, 0); }
   20% {
-    clip: rect(32px, 9999px, 22px, 0); }
+    clip: rect(35px, 9999px, 45px, 0); }
   25% {
-    clip: rect(28px, 9999px, 42px, 0); }
+    clip: rect(96px, 9999px, 78px, 0); }
   30% {
-    clip: rect(99px, 9999px, 72px, 0); }
+    clip: rect(70px, 9999px, 60px, 0); }
   35% {
-    clip: rect(45px, 9999px, 64px, 0); }
+    clip: rect(83px, 9999px, 89px, 0); }
   40% {
-    clip: rect(13px, 9999px, 60px, 0); }
+    clip: rect(82px, 9999px, 52px, 0); }
   45% {
-    clip: rect(34px, 9999px, 40px, 0); }
+    clip: rect(48px, 9999px, 71px, 0); }
   50% {
-    clip: rect(56px, 9999px, 47px, 0); }
+    clip: rect(72px, 9999px, 97px, 0); }
   55% {
-    clip: rect(90px, 9999px, 1px, 0); }
+    clip: rect(70px, 9999px, 87px, 0); }
   60% {
-    clip: rect(34px, 9999px, 29px, 0); }
+    clip: rect(41px, 9999px, 15px, 0); }
   65% {
-    clip: rect(24px, 9999px, 75px, 0); }
+    clip: rect(73px, 9999px, 1px, 0); }
   70% {
-    clip: rect(12px, 9999px, 58px, 0); }
+    clip: rect(28px, 9999px, 43px, 0); }
   75% {
-    clip: rect(48px, 9999px, 67px, 0); }
+    clip: rect(25px, 9999px, 23px, 0); }
   80% {
-    clip: rect(41px, 9999px, 10px, 0); }
+    clip: rect(82px, 9999px, 2px, 0); }
   85% {
-    clip: rect(82px, 9999px, 28px, 0); }
+    clip: rect(70px, 9999px, 6px, 0); }
   90% {
-    clip: rect(32px, 9999px, 97px, 0); }
+    clip: rect(83px, 9999px, 56px, 0); }
   95% {
-    clip: rect(53px, 9999px, 68px, 0); }
+    clip: rect(44px, 9999px, 5px, 0); }
   100% {
-    clip: rect(33px, 9999px, 6px, 0); } }
+    clip: rect(83px, 9999px, 57px, 0); } }
 
 .glitch:before {
   content: attr(data-text);
