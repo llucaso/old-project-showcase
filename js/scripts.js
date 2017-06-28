@@ -6,12 +6,12 @@ $(function() {
   //$("#biglink").fitText(1.2, { minFontSize: '30px', maxFontSize: '72px' });
 
   $('#btn-1').mouseenter(function() {
-  createElement();
+  //createElement();
   showVideo('1');
 });
 
 $('#btn-1').mouseleave(function() {
-  deleteElement();
+  //deleteElement();
   showVideo('2');
 });
 
@@ -162,15 +162,15 @@ element.type = 'video/mp4';
 element.id = "src-glitch";
 
 
-function createElement() {
-  var video = document.getElementById('video-1');
-  video.appendChild(element);
-}
+// function createElement() {
+//   var video = document.getElementById('video-1');
+//   video.appendChild(element);
+// }
 
-function deleteElement() {
-  var src = document.querySelector('#src-glitch');
-  src.remove();
-}
+// function deleteElement() {
+//   var src = document.querySelector('#src-glitch');
+//   src.remove();
+// }
 
 
 
